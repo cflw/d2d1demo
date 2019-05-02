@@ -1,18 +1,19 @@
-#include "Í¼ÐÎ.h"
-#include "³£Á¿.h"
-void CÍ¼ÐÎ::f³õÊ¼»¯(HWND a´°¿Ú) {
-	m¶þÎ¬.f³õÊ¼»¯(a´°¿Ú, cËõ·Å);
+ï»¿#include "å›¾å½¢.h"
+#include "å¸¸é‡.h"
+void Cå›¾å½¢::fåˆå§‹åŒ–(HWND açª—å£) {
+	mäºŒç»´.fåˆå§‹åŒ–(açª—å£, cç¼©æ”¾);
 }
-void CÍ¼ÐÎ::fÏú»Ù() {
+void Cå›¾å½¢::fé”€æ¯() {
+	mäºŒç»´.fé”€æ¯();
 }
-void CÍ¼ÐÎ::f¼ÆËã() {
+void Cå›¾å½¢::fè®¡ç®—() {
 }
-void CÍ¼ÐÎ::f¸üÐÂ() {
+void Cå›¾å½¢::fæ›´æ–°() {
 }
-void CÍ¼ÐÎ::fÏÔÊ¾() {
-	auto &väÖÈ¾¿ØÖÆ = m¶þÎ¬.fgäÖÈ¾¿ØÖÆ();
-	väÖÈ¾¿ØÖÆ.f¿ªÊ¼();
-	väÖÈ¾¿ØÖÆ.fÇåÆÁ();
+void Cå›¾å½¢::fæ˜¾ç¤º() {
+	auto &væ¸²æŸ“æŽ§åˆ¶ = mäºŒç»´.fgæ¸²æŸ“æŽ§åˆ¶();
+	væ¸²æŸ“æŽ§åˆ¶.få¼€å§‹();
+	væ¸²æŸ“æŽ§åˆ¶.fæ¸…å±();
 
-	väÖÈ¾¿ØÖÆ.f½áÊø();
+	væ¸²æŸ“æŽ§åˆ¶.fç»“æŸ();
 }
