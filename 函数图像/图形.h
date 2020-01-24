@@ -11,4 +11,6 @@ public:
 	void f更新();
 	void f显示();
 	二维::C二维 m二维;
+	二维::tp画图形 m画图形;
+	std::vector<std::function<float(float)>> ma函数;
 };

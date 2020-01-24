@@ -1,17 +1,17 @@
-#pragma once
-#include <cflwÊıÑ§.h>
-#include <cflwÍ¼ĞÎ_d2d.h>
-namespace ÊıÑ§ = cflw::ÊıÑ§;
-namespace ¶şÎ¬ = cflw::Í¼ĞÎ::d2d;
-class CÍ¼ĞÎ {
+ï»¿#pragma once
+#include <cflwæ•°å­¦.h>
+#include <cflwå›¾å½¢_d2d.h>
+namespace æ•°å­¦ = cflw::æ•°å­¦;
+namespace äºŒç»´ = cflw::å›¾å½¢::d2d;
+class Cå›¾å½¢ {
 public:
-	void f³õÊ¼»¯(HWND);
-	void fÏú»Ù();
-	void f¼ÆËã();
-	void f¸üĞÂ();
-	void fÏÔÊ¾();
-	¶şÎ¬::C¶şÎ¬ m¶şÎ¬;
-	¶şÎ¬::tp»­ÎÄ±¾ m»­ÎÄ±¾;
-	¶şÎ¬::tpÎÄ±¾²¼¾Ö m²¼¾Ö;
-	¶şÎ¬::tpÎÄ±¾Ğ§¹û mĞ§¹û;
+	void fåˆå§‹åŒ–(HWND);
+	void fé”€æ¯();
+	void fè®¡ç®—();
+	void fæ›´æ–°();
+	void fæ˜¾ç¤º();
+	äºŒç»´::CäºŒç»´ mäºŒç»´;
+	äºŒç»´::tpç”»æ–‡æœ¬ mç”»æ–‡æœ¬;
+	äºŒç»´::tpæ–‡æœ¬å¸ƒå±€ må¸ƒå±€;
+	äºŒç»´::tpæ–‡æœ¬æ•ˆæœ mæ•ˆæœ;
 };

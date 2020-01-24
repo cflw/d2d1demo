@@ -5,3 +5,6 @@ constexpr int c窗口高度 = 600;
 constexpr int c基础宽度 = 640;
 constexpr int c基础高度 = 480;
 constexpr float c缩放 = (float)c窗口高度 / (float)c基础高度;
+constexpr float c图像缩放 = 10;
+constexpr float c定义域 = 40;
+constexpr float c值域 = 40;
