@@ -1,14 +1,11 @@
 ﻿#include "图形.h"
 #include "常量.h"
-#include <cflw图形_dx纹理.h>
-namespace 纹理 = cflw::图形::dx纹理;
 void C图形::f初始化(HWND a窗口) {
 	m三维.f初始化(a窗口);
 	m二维.f初始化_设备(m三维.fg基础设备().Get());
 	m二维.f初始化_单个位图(m三维.fg交换链().Get(), c缩放);
-	纹理::C图像工厂 v图像工厂;
-	v图像工厂.f初始化();
-	auto v纹理 = v图像工厂.f高级读取(L"纹理.jpg", 纹理::格式::F强制转换(纹理::格式::c通用pbgra));
+	m图像工厂.f初始化();
+	auto v纹理 = m图像工厂.f高级读取(L"纹理.jpg", 纹理::格式::F强制转换(纹理::格式::c通用pbgra));
 	m位图 = m二维.fc位图(v纹理);
 	m效果 = m二维.fc效果(CLSID_D2D1GaussianBlur);
 	m效果->SetInput(0, m位图.Detach());
@@ -16,7 +13,7 @@ void C图形::f初始化(HWND a窗口) {
 }
 void C图形::f销毁() {
 	m效果.Reset();
-	//m位图.Reset();	//位图在析构时会抛异常,原因未知
+	m位图.Reset();
 	m二维.f销毁();
 	m三维.f销毁();
 }
